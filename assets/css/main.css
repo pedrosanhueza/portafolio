@@ -2536,11 +2536,11 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
+					color: #194793;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
+					color: #194793;
 				}
 
 				.wrapper.style2 .icon.major:before {
@@ -2618,6 +2618,7 @@ input, select, textarea {
 			margin-right: auto;
 			width: 50%;
 		}
+
 
 /* List */
 
