@@ -8,7 +8,16 @@
  		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/png" href="images/Logo-BI.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
+		<style>
+			#containerIntro h1,
+			#containerIntro p {
+				display: inline;
+				vertical-align: top;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 16px;
+				line-height: 28px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -32,39 +41,52 @@
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
+						<div class="inner" >
 							<h1 style="text-align:center">PEDRO SANHUEZA</h1>
 							<p style="text-align:center">
-							A Business Analyst showcasing his journey  
+							Business Analyst showcasing his journey!  
 							</p>
-							<img class="center" alt="centered image" data-position="center center" src="images/PedroSanhueza.png" width="280" height="280" style="text-align:center"/>
-							<br></br>
-							<p>
-								I help companies to analyse their datasets.
+							<img class="center" alt="centered image" data-position="center center" src="images/PedroSanhueza.png" width="310" height="310" style="text-align:center"/>
 							
-								I am skilled for most of the data-science steps (data pre-processing,
-								application of statistical methods, data visualization and results communication)
-								as well as displaying KPI's and built-in metrics.
+						</div>
+						<div class="inner" id="containerIntro">
+							<p> I help companies with production insigths. </p> <br><br>
+							<p >Data science steps I manage:<p>
+							<ul style=“list-style-type:square”>
+								<li>Data pre-processing.</li>													
+								<li>Application of statistical methods.</li>
+								<li>Data visualization and results communication.</li>
+								<li>Displaying KPI's and built-in metrics.</li>
+					</ul>
 							</p>
 							<p style="font-size:60%;">*Currently working at <a href="https://www.hcmi.co/" target="_blank">HCMI.CO</a> as a Data Analyst Consultant.</p>
+							<br><br>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="#one" class="button scrolly">Full biography</a></li>
+								<li><a href="#one" class="button scrolly">Personal Projects</a></li>
+								<li><a href="#one" class="button scrolly">Work Experience</a></li>
+								<li><a href="#one" class="button scrolly">Contact Me</a></li>
 							</ul>
 						</div>
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
+						<br>
+						<h1 style="text-align:center">Work Experience</h1>
 						<section>
 							<a href="#" class="image"><img src="images/PowerBI-collage.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
-								<div class="inner">
-									<h2>BYU-Idaho</h2>
-									<h3>Data Analyst in the Business Solutions Team</h4>
-									<p>
-										Dashboards I built for BYU - Idaho.
-									    Identify patterns in Agents performance. Display metrics for KPI's.
-										Present information to with Power BI to partner departments.
-									</p>
-									<ul class="actions">
+								<div class="inner" id="containerIntro">
+									<p> <b>Company:</b> BYU-Idaho</p> <br>
+									<p> <b>Office:</b> <p>Business Solutions</p><br>
+									<p> <b>Position:</b> <p>Data Analyst</p><br>
+									<p> <b>Tasks:</b><p>
+										<ul style=“list-style-type:square”>
+													<li>Identify patterns in employees's performance.</li>													
+													<li>Display metrics for KPI's (key performance indicators).</li>
+													<li>Present Power BI dashboards to partner departments.</li>
+													<li>Built Power BI dashboards for various departments in BYU-Idaho.</li>
+										</ul>
+										<ul class="actions">
 										<li><a href="PowerBI.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
@@ -73,13 +95,15 @@
 						<section>
 							<a href="#" class="image"><img src="images/HCMI_logo.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
-								<div class="inner">
-									<h2>HCMI</h2>
-									<h3>Data Analyst Intern</h3>
-									<p>
-										Perform personalized dashboards with benchmarking metrics for multiple clients.
-										Use machine learning models for data prediction and benchmarking comparisson.
-									</p>
+								<div class="inner" id="containerIntro">
+									<p> <b>Company:</b> HCMI</p> <br>
+									<p> <b>Position:</b> <p>Data Analyst Consultant</p><br>
+									<p> <b>Tasks:</b><p>
+										<ul style=“list-style-type:square”>
+													<li>Build personalized dashboards in Power BI for various clients</li>													
+													<li>Webscrape sec.gov financial statements for benchmarking</li>
+													<li>Manage Power BI embedded into private plataform (SOLVE)</li>
+												</ul>
 									<ul class="actions">
 										<li><a href="HCMI.html" class="button">Learn more</a></li>
 									</ul>
@@ -153,7 +177,6 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
