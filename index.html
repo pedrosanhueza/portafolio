@@ -182,7 +182,7 @@
 							<h2>Get in touch</h2>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" onsubmit="myfunc(event)">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -197,10 +197,24 @@
 												<textarea name="message" id="message" rows="5"></textarea>
 											</div>
 										</div>
-										<ul class="actions">
+										<!-- <ul class="actions">
 											<li><a href="mailto: SaintWhoza@pronton.com" class="button submit">Send Message</a></li>
-										</ul>
+										</ul> -->
+										<input type="submit" value="Submit">
 									</form>
+									<script type="text/javascript">
+										function myfunc(event) {
+											event.preventDefault()
+
+											var name = document.getElementById("name").value;
+											var email = document.getElementById("email").value;
+											var message = document.getElementById("message").value;
+
+											localStorage.setItem('ls_name',name)
+											localStorage.setItem('ls_email',email)
+											localStorage.setItem('ls_message',message)
+										}
+									</script>
 								</section>
 								<section>
 									<ul class="contact">
