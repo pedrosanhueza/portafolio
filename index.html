@@ -44,28 +44,31 @@
 						<div class="inner" >
 							<h1 style="text-align:center">PEDRO SANHUEZA</h1>
 							<p style="text-align:center">
-							Business Analyst showcasing his journey!  
+								A Business Analyst showcasing my journey!
 							</p>
-							<img class="center" alt="centered image" data-position="center center" src="images/PedroSanhueza.png" width="310" height="310" style="text-align:center"/>
-							
+							<br>
+							<span class="image fit"><img src="images/profile_pic.JPG" alt="" /></span>
+							<p style="text-align:center">
+								"You cannot manage what you have don't measure"
+							</p>
 						</div>
 						<div class="inner" id="containerIntro">
-							<p> I help companies with production insigths. </p> <br><br>
-							<p >Data science steps I manage:<p>
+							<p>
+							I help companies with production insigths. The way I do that is through the <b>Data Science</b> steps:<p>
 							<ul style=“list-style-type:square”>
 								<li>Data pre-processing.</li>													
 								<li>Application of statistical methods.</li>
-								<li>Data visualization and results communication.</li>
 								<li>Displaying KPI's and built-in metrics.</li>
+ 								<li>Data visualization and results communication.</li>
 					</ul>
 							</p>
-							<p style="font-size:60%;">*Currently working at <a href="https://www.hcmi.co/" target="_blank">HCMI.CO</a> as a Data Analyst Consultant.</p>
+							<p style="font-size:60%;">*Currently working at <a href="https://www.hcmi.co/" target="_blank" style="font-size:60%;">HCMI.CO</a> as a Data Analyst Consultant.</p>
 							<br><br>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Full biography</a></li>
-								<li><a href="#one" class="button scrolly">Personal Projects</a></li>
+								<li><a href="Biography.html" class="button scrolly">Full biography</a></li>
+								<li><a href="#two" class="button scrolly">Personal Projects</a></li>
 								<li><a href="#one" class="button scrolly">Work Experience</a></li>
-								<li><a href="#one" class="button scrolly">Contact Me</a></li>
+								<li><a href="#three" class="button scrolly">Contact Me</a></li>
 							</ul>
 						</div>
 				<!-- One -->
@@ -179,7 +182,7 @@
 							<h2>Get in touch</h2>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" onsubmit="myfunc(event)">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -194,35 +197,43 @@
 												<textarea name="message" id="message" rows="5"></textarea>
 											</div>
 										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
+										<!-- <ul class="actions">
+											<li><a href="mailto: SaintWhoza@pronton.com" class="button submit">Send Message</a></li>
+										</ul> -->
+										<input type="submit" value="Submit">
 									</form>
+									<script type="text/javascript">
+										function myfunc(event) {
+											event.preventDefault()
+
+											var name = document.getElementById("name").value;
+											var email = document.getElementById("email").value;
+											var message = document.getElementById("message").value;
+
+											localStorage.setItem('ls_name',name)
+											localStorage.setItem('ls_email',email)
+											localStorage.setItem('ls_message',message)
+										}
+									</script>
 								</section>
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
+											<a href="mailto: SaintWhoza@pronton.com">SaintWhoza@pronton.com</a>
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
+											<span>+1 (208) 291-0102</span>
 										</li>
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
 												<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 												<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
 												<li><a href="https://www.instagram.com/sanhueza_pedro/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://www.linkedin.com/in/pedro-sanhueza/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
